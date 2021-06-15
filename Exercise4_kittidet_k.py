@@ -1,7 +1,7 @@
-FE=75.50
-GB=88.60
-ITC=99.99
-CP=49.00
+FE = (input("FE="))
+GB = (input("GB="))
+ITC = (input("ITC="))
+CP = (input("CP="))
 print("--- Your Score ---")
 print("Foundation English :",FE)
 print("General Business :",GB)
