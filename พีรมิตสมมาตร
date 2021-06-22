@@ -1,0 +1,6 @@
+y=int(input(:))
+
+for x in range(y):
+    print(' '*(x+y),"*"*(x*2+1))
+    x+=1
+    y=y-2
