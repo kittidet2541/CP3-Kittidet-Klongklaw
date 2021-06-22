@@ -1,10 +1,9 @@
 Number=int(input(":"))
-
-c=1
+c=0
 for x in range(Number):
-    print(" "*Number,"*"*c)
-    c=c+2
-    Number=Number-1
+    print(" "*(Number-x),"*"*((x+1)*2-1))
+
+
 
 
 
