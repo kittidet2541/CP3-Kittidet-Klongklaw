@@ -1,7 +1,7 @@
 def login():
     usernameInput = input("Username : ")
     passwordInput = input("Password : ")
-    while usernameInput == "admin" and passwordInput == "1234":
+    while usernameInput == "kittidet" and passwordInput == "klongklaw":
         return True
     else:
         return False
@@ -25,9 +25,14 @@ def priceCalculator():
     price1 = int(input("First Product Price : "))
     price2 = int(input("Second Product Price : "))
     return vatCalculator(price1 + price2)
-print(login())
-showMenu()
-print(menuSelect())
-totalPrice=int(input("totalprice"))
-print(vatCalculator(totalPrice))
-print(priceCalculator())
+if login():
+    showMenu()
+    result=menuSelect()
+    if result==1:
+        totalPrice=int(input("totalprice:"))
+        print(vatCalculator(totalPrice))
+    elif result==2:
+        print(priceCalculator())
+else:
+    print("Login failed")
+
