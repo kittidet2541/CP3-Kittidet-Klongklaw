@@ -1,4 +1,0 @@
-name,favMovie,favPet
-oat,onepiece,cat
-earn,fastandfirious,cat
-ize,koreamovie,cat
